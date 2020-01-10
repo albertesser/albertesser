@@ -28,6 +28,19 @@ h1, h2, h3, h4, h5,
   font-family: "Arbutus Slab", serif;
   color: #000; }
 
+p {
+  font-size: 16px; }
+  @media (max-width: 767px) {
+    p {
+      font-size: 14px;}
+  }
+
+ul li {
+  font-size: 16px; }
+  @media (max-width: 767px) {
+    ul li {
+      font-size: 14px; } }
+
 .border-2 {
   border-width: 2px; }
 
@@ -100,7 +113,7 @@ body:after {
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 7em 0; } }
+      padding: 2em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -272,6 +285,7 @@ body:after {
   position: absolute;
   top: 0;
   width: 100%;
+  max-height: 100px;
   border-bottom: rgba(255, 255, 255, 0.7); }
   .site-navbar:hover {
     background: #fff; }
@@ -568,6 +582,9 @@ body:after {
     font-family: "Arbutus Slab", serif;
     font-size: 1.3rem;
     color: #1a1a1a; }
+    @media (max-width: 767px) {
+      .site-blocks-cover .lead {
+        font-size: 1rem; } }
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
@@ -585,12 +602,18 @@ body:after {
   .site-blocks-cover, .site-blocks-cover > .container, .site-blocks-cover > .container > .row {
     min-height: 250px;
     height: 40vh; }
+
   .site-blocks-cover .text-intro {
     position: relative;
     z-index: 2; }
   .site-blocks-cover h1 {
     font-size: 3rem;
     font-family: "Arbutus Slab", serif; }
+    @media (max-width: 575px) {
+      .site-blocks-cover h1 {
+        font-size: 4vh;
+      }
+    }
   .site-blocks-cover .img-face {
     position: absolute;
     display: flex;
@@ -622,7 +645,7 @@ body:after {
 
 .section-title {
   position: relative;
-  padding-bottom: 20px; }
+  padding-bottom: 0px; }
   .section-title:after {
     content: "";
     position: absolute;
@@ -658,8 +681,8 @@ body:after {
     top: -2px; }
   .service .service-number {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 60px;
-    flex: 0 0 60px; }
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px; }
     .service .service-number span {
       position: relative;
       width: 50px;
@@ -670,6 +693,7 @@ body:after {
       display: inline-block;
       color: #fff;
       text-align: center; }
+
   .service .service-about *:last-child {
     margin-bottom: 0; }
   .service .service-about h3 {
